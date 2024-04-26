@@ -117,9 +117,9 @@ async function createBlog() {
 
         })
         .catch(err => {
-            console.log(err);
-            // localStorage.removeItem('token');
-            // window.location.href = '/login';
+           
+            localStorage.removeItem('token');
+            window.location.href = '/login';
         });
 }
 
@@ -219,12 +219,12 @@ async function modaldelete(id_blog) {
                 },
             };
 
-            console.log(id_blog);
+         
             fetch('http://localhost:8080/api/blog/' + id_blog + '', optionsG)
                 .then(response => response.json())
                 .then(async response => {
 
-                    console.log(response);
+                 
                     if (response.success) {
                         const options = {
                             method: 'GET',
@@ -310,7 +310,7 @@ async function update() {
                 blogs.value = reloaDR;
 
                 titulo.value = "";
-                console.log("pasa por aqui");
+                
                 isModalVisible.value = false;
                 Swal.fire({
                     title: "Actualizada!",
@@ -328,9 +328,9 @@ async function update() {
             }
         })
         .catch(err => {
-            console.log(err);
-            // localStorage.removeItem('token');
-            // window.location.href = '/login';
+            
+            localStorage.removeItem('token');
+            window.location.href = '/login';
         });
 }
 
