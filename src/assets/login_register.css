@@ -1,0 +1,174 @@
+.container-login {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cc {
+    color: white;
+}
+
+.container-login {
+
+    widows: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-lf {
+    background-color: rgb(41, 41, 41);
+    border: 1px solid rgb(63, 62, 62);
+    width: 26vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 2px 14px 79px 56px rgba(0, 0, 0, 0.446);
+    -webkit-box-shadow: 2px 14px 79px 56px rgba(0, 0, 0, 0.596);
+    -moz-box-shadow: 2px 14px 79px 56px rgba(0, 0, 0, 0.31);
+}
+
+.contenedor-lf header,
+.contenedor-lf footer {
+    height: 20%;
+    display: flex;
+
+}
+
+.contenedor-lf header {
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-lf header img {
+    height: 60%;
+
+}
+
+.contenedor-lf form {
+    height: 60%;
+    width: 75%;
+}
+
+
+
+/* estilos para los inputs en grupo
+ */
+
+
+.contenedor-lf .grupo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+
+}
+
+.contenedor-lf .grupo.enviar {
+    margin-top: 20%;
+}
+
+.contenedor-lf .grupo label {
+    display: inline-block;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.contenedor-lf .grupo.enviar button {
+    display: inline-block;
+    background-color: rgb(63, 62, 62);
+    padding: 5px 5px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid rgb(63, 62, 62);
+    color: white;
+    font-size: 1.1rem;
+}
+
+.contenedor-lf .grupo input[type=text],
+.contenedor-lf .grupo input[type=password] {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid grey;
+    font-size: 1.2rem;
+    height: 2rem;
+    padding: 2px 4px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.contenedor-lf .grupo input[type=text]:focus,
+.contenedor-lf .grupo input[type=password]:focus {
+    border: 1px solid rgb(7, 81, 230);
+
+}
+
+
+/** */
+
+
+#submit {
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: white;
+    color: rgb(63, 62, 62);
+    transition: .2s linear;
+    box-shadow: 0px 23px 51px -12px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 23px 51px -12px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 23px 51px -12px rgba(0, 0, 0, 0.6);
+
+}
+
+/* estilo para el footer login */
+
+
+
+.contenedor-lf footer {
+    display: inline-block;
+    width: 65%;
+
+}
+
+.contenedor-lf footer article {
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+
+.contenedor-lf footer article a {
+    text-decoration: none;
+    color: rgb(7, 81, 230);
+    font-weight: bold;
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .contenedor-lf {
+
+        width: 80vw;
+        height: 65vh;
+
+    }
+
+    .contenedor-lf .grupo.enviar button {
+        width: 70%;
+
+    }
+
+}
+
+@media only screen and (max-width: 1366px) {
+    .contenedor-lf .grupo.enviar button {
+
+        width: 70%;
+
+    }
+
+}
